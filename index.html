@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mistri Solution</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class='login-page'>
+
+        <div class='companyName'>
+            <h1 class='sideHeading'>Mistri Solutions  </h1>
+            <h5 class='sideDescription'>Make yourself digitalized &amp; more effecient </h5>
+            <a class='sideReturn' href="/"><img src="./images/Vector 1.svg" alt="" /></a>
+        </div>
+
+        <div class='sidebarSection'>
+            <div class='sidebar'>
+                <h1 class='sideHeading'>Mistri Solutions  </h1>
+                <h5 class='sideDescription'>Make yourself digitalized &amp; more effecient </h5>
+                <a class='sideReturn' href="/"><img src="./images/Vector 1.svg" alt="" /></a>
+            </div>
+        </div>
+        
+
+        <div class='form-section'>
+            <div class="form">
+
+                <form class="login-form">
+                    <h1>Welcome</h1>
+                    <h4>Log In</h4>
+                    <input type="text" placeholder="email" />
+                    <input type="password" placeholder="password" class="hidden"/>
+                    <span id="toggleEye" class='togglePass' onclick="loginEyeToggle()">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </span>
+                    <button class="login-submit">login</button>
+                    <p>New User!! Please <span  onclick="toggleLogIn()">Sign in</span></p>
+                </form>
+
+                <form id="sign-in" class="login-form">
+                    <h1>Welcome</h1>
+                    <h4>Sign In</h4>
+                    <input type="text" placeholder="name" />
+                    <input type="text" placeholder="email" />
+                    <input type="password" placeholder="password" class="hidden2"/>
+                    <span id="toggleEye2" class='togglePass' onclick="signEyeToggle()">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </span>
+                    <button class="signin-submit">login</button>
+                    <p>New User!! Please <span onclick="toggleSignIn()">Log in</span></p>
+                </form>
+                
+            </div>
+            <footer>Mistri Solution</footer>
+        </div>
+    </div>
+
+
+    <script src="./user.json"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+<script src="./firebase.js" type="module"></script>
+</html>
